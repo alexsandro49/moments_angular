@@ -7,17 +7,23 @@ import { Moment } from "src/app/Moment";
   templateUrl: "./moment-form.component.html",
   styleUrls: ["./moment-form.component.css"],
 })
-export class MomentFormComponent {
+export class MomentFormComponent implements OnInit {
   @Output() onSubmit = new EventEmitter<Moment>();
+  @Input() momentData: Moment | null = null;
   @Input() btnText!: string;
 
   momentForm!: FormGroup;
 
   ngOnInit(): void {
     this.momentForm = new FormGroup({
-      id: new FormControl(""),
-      title: new FormControl("", [Validators.required]),
-      description: new FormControl("", [Validators.required]),
+      id: new FormControl(this.momentData ? this.momentData.id : ""),
+      title: new FormControl(this.momentData ? this.momentData.title : "", [
+        Validators.required,
+      ]),
+      description: new FormControl(
+        this.momentData ? this.momentData.description : "",
+        [Validators.required]
+      ),
       image: new FormControl(""),
     });
   }
@@ -40,7 +46,6 @@ export class MomentFormComponent {
     if (this.momentForm.invalid) {
       return;
     }
-    console.log(this.momentForm.value);
 
     this.onSubmit.emit(this.momentForm.value);
   }
