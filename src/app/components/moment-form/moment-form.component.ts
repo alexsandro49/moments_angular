@@ -24,7 +24,9 @@ export class MomentFormComponent implements OnInit {
         this.momentData ? this.momentData.description : "",
         [Validators.required]
       ),
-      image: new FormControl(""),
+      image: new FormControl(
+        this.momentData ? this.momentData.image : "",
+        [Validators.required]),
     });
   }
 
@@ -34,6 +36,10 @@ export class MomentFormComponent implements OnInit {
 
   get description() {
     return this.momentForm.get("description")!;
+  }
+
+  get image() {
+    return this.momentForm.get("image")!;
   }
 
   onFileSelected(event: any) {

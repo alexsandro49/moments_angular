@@ -1,27 +1,58 @@
-# MomentsAngular
+# Moments
+Mini projeto de rede social do curso Angular, do professor Matheus Battisti, permitindo que os usuários postem momentos marcantes de suas vidas, além de interagir com outras publicações. Feito com o framework Angular.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+## Como rodar na sua máquina
+### Preparando a api:
+1. Clone o repositório da api em sua máquina:
+   ```
+   git clone https://github.com/alexsandro49/api_restful_adonis.git
+   ```
+2. Dentro da pasta do projeto, instale as dependências:
+   ```
+   npm install
+   ```
+3. Execute o script install.sh:
+   ```
+   chmod +x ./install.sh && ./install.sh
+   ```
+4. Execute a api:
+   ```
+   node ace serve
+   ```
 
-## Development server
+#### A api é necessária para o acesso ao banco de dados.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Preparando o projeto
+1. Clone o repositório do projeto:
+   ```
+   git clone https://github.com/alexsandro49/moments_angular.git
+   ```
+2. Dentro da pasta do projeto, instale as dependências:
+   ```
+   npm install
+   ```
+3. Faça a instalação do Angular CLI:
+   ```
+   npm install -g @angular/cli
+   ```
+3. Execute o projeto:
+   ```
+   ng serve
+   ```
 
-## Code scaffolding
+## Referências
+### Playlist com o projeto:
+   ```
+   https://www.youtube.com/playlist?list=PLnDvRpP8Bnex2GQEN0768_AxZg_RaIGmw
+   ```
+### Repositório do projeto original:
+   ```
+   https://github.com/matheusbattisti/curso_angular_yt
+   ```
+### Repositório original da api:
+   ```
+   https://github.com/matheusbattisti/curso_adonis_api_yt
+   ```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Licença
+- [MIT](https://github.com/alexsandro49/moments_angular/blob/main/LICENSE)
