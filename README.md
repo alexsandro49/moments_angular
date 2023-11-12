@@ -1,5 +1,5 @@
 # Moments
-Mini projeto de rede social do curso Angular, do professor Matheus Battisti, permitindo que os usuários postem momentos marcantes de suas vidas, além de interagir com outras publicações. Feito com o framework Angular.
+Mini projeto de rede social do curso Angular, do professor [Matheus Battisti](https://github.com/matheusbattisti/), permitindo que os usuários postem momentos marcantes de suas vidas, além de interagir com outras publicações. Feito com o framework Angular.
 
 ## Como rodar na sua máquina
 ### Preparando a api:
