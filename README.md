@@ -11,11 +11,16 @@ Mini projeto de rede social do curso Angular, do professor Matheus Battisti, per
    ```
    npm install
    ```
-3. Execute o script install.sh:
+3. Prepare as variáveis de ambiente:
    ```
-   chmod +x ./install.sh && ./install.sh
+   mv ./.env.example ./.env
    ```
-4. Execute a api:
+
+4. Gere o banco de dados:
+   ```
+   node ace migration:run
+   ```
+5. Execute a api:
    ```
    node ace serve
    ```
