@@ -45,10 +45,12 @@ Mini projeto de rede social do curso Angular, do professor Matheus Battisti, per
    ng serve
    ```
 
+#### O projeto vai estar disponível no http://localhost:4200/
+
 ## Referências
 ### Playlist com o projeto:
    ```
-   https://www.youtube.com/playlist?list=PLnDvRpP8Bnex2GQEN0768_AxZg_RaIGmw
+   https://youtube.com/playlist?list=PLnDvRpP8Bnex2GQEN0768_AxZg_RaIGmw&si=jVHIsgnU5oVVM7im
    ```
 ### Repositório do projeto original:
    ```
